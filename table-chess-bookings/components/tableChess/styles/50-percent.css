@@ -1,0 +1,73 @@
+.chess-table-50 {
+    font-size: 9px !important;
+}
+
+.chess-table-50 tbody > tr > .busy-cell {
+    padding-left: 10px; /*calculate .date-line horizontal*/
+}
+
+.chess-table-50 .busy-cell .date-line-before {
+    position: absolute;
+    left: 11px;   /* Положение треугольника */
+    top: 2%;
+    border: 7px solid transparent;
+    border-right: 4px solid;
+    border-bottom: 12px solid;
+    border-right-color: inherit;
+    border-bottom-color: inherit;
+}
+
+.chess-table-50 .busy-cell .date-line-after {
+    position: absolute;
+    right: -19px;  /* Положение треугольника */
+    top: 5%;
+    border: 6px solid transparent;
+    border-left: 4px solid;
+    border-top: 12px solid;
+    border-left-color: inherit;
+    border-top-color: inherit;
+}
+
+.chess-table-50 .busy-cell .date-line .line-status {
+    margin-left: 12px; /*calculate .date-line horizontal*/
+}
+
+.chess-table-50 .busy-cell .date-line .line-status .text-line{
+    padding-left: 1px;
+    font-size: 9px;
+}
+
+.chess-table-50  tbody > tr > td,
+.chess-table-50  thead > tr > th{
+    padding: 2px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.chess-table-50 tbody > tr .text-selected-cell{
+    padding:  4px 0px 0px 0px !important;
+    text-align: center !important;
+}
+
+.chess-table-50 thead > tr > .th-number {
+    padding-top: 0.5px !important;
+    padding-bottom: 0.5px !important;
+    font-size: 11px !important;
+}
+
+.chess-table-50 tbody > tr > .th-number{
+    font-size: 11px !important;
+}
+
+.chess-table-50 .th-number > .text-float {
+    padding-top: 2px !important;
+}
+
+.chess-table-50 .th-category{
+    font-size: 11px;
+}
+
+.chess-table-50 .busy-cell .nofit-date_start-line{
+    margin-left: -10px !important; /*calculate minus .date-line horizontal*/
+}
+

@@ -1,0 +1,79 @@
+.custom {
+}
+.custom > .tooltip-inner {
+    background-color: #efefef;
+    color: #000;
+    text-align: left
+}
+.tooltip {
+    z-index: 1040 /* чтобы tooltip не перекрывал модаль*/
+}
+
+/*т.к. у tooltip были перопределены events over move out*/
+.tooltip.custom {
+    animation-name: tooltip-custom-opacity-transform;
+    animation-timing-function: ease;
+    animation-duration: 1.2s;
+}
+
+@keyframes tooltip-custom-opacity-transform{
+    0%{opacity:0;}
+    80%{opacity:0;}
+    90%{opacity:.7}
+    100%{opacity:1}
+}
+
+
+.tooltip.show{
+    opacity: 1;
+}
+
+.modal-content .form-control {
+    color: #000000 !important;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e4eaec;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .custom-select.is-invalid {
+    border-color: #dc3545;
+}
+
+.bootstrap-4 .btn.btn-sm{
+    font-family: inherit;
+    margin:0;
+    line-height: 1.5;
+    border-radius: .2rem;
+    padding: .25rem .5rem;
+    font-size: 12px;
+    opacity: 1 !important;
+}
+.bootstrap-4 .btn.btn-sm[disabled]{
+    opacity: 0.6 !important;
+}
+
+.bootstrap-4 .btn.btn-sm .glyphicon{
+   font-size: 14px;
+}
+
+.bootstrap-4 .alert-danger {
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+}
+
+.bootstrap-4 .alert .close {
+    background-color: initial;
+}
+
+
+.bootstrap-4 .alert-primary {
+    color: #62a8ea;
+    background-color: rgba(10, 16, 21, 0.8);
+    border-color: #292929;
+}
+
+.react-date-picker input{
+    border: 0;
+    border-radius: 0;
+}

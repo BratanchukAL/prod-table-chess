@@ -1,0 +1,32 @@
+.container-table-shadow .button{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 50%;
+
+    border-radius: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.container-table-shadow .text:first-letter{
+    text-transform: uppercase;
+}
+
+.container-table-shadow .text{
+    border-bottom: 1px dashed;
+}
+.container-table-shadow .text:hover{
+    border-bottom: 1px dashed;
+    border-color: #ffffff;
+    transition: border-color 0.09s linear;
+}
+
+.container-table-shadow .table{
+    animation: alfa-0-1 0.2s;
+}
+
+@keyframes alfa-0-1 {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}

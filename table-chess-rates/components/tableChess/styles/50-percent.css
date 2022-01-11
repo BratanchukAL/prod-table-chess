@@ -1,0 +1,27 @@
+.chess-table-50 {
+    font-size: 9px !important;
+}
+
+.chess-table-50  tbody > tr > td,
+.chess-table-50  thead > tr > th{
+    padding: 5px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}
+
+.chess-table-50 tbody > tr .text-selected-cell{
+    padding:  7px 0px 0px 0px !important;
+    text-align: center !important;
+}
+
+.chess-table-50 thead > tr > .th-number {
+    padding-top: 2.5px !important;
+    padding-bottom: 2.5px !important;
+    font-size: 12px !important;
+    /*min-width: 160px !important;*/
+}
+
+.chess-table-50 tbody > tr > .th-number{
+    font-size: 12px !important;
+    /*max-width: 160px !important;*/
+}

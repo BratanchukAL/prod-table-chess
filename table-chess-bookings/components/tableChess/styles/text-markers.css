@@ -1,0 +1,6 @@
+/* закрыт для бронирования номер */
+.chess-table tbody .th-number .closed-room{
+    background-color: #ff947c;
+    padding-right: 2px;
+    padding-left: 2px;
+}

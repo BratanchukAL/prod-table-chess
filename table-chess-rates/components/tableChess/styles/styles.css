@@ -1,0 +1,182 @@
+
+.container-chess-table{
+    overflow: scroll;
+    position: relative;
+}
+
+.chess-table{
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+.chess-table .btn {
+    font-size: 12px;
+}
+
+.chess-table .day-off {
+    background-color: #fff0e6 !important;
+}
+
+.chess-table > thead .today {
+    position: relative;
+    background-color: rgb(145, 180, 255) !important;
+}
+
+.chess-table > thead .today .today-line{
+    position: absolute;
+    background-color: rgb(145, 180, 255) !important;
+    width: 2px;
+    z-index: 1;
+}
+
+.chess-table thead tr th{
+    border-bottom: 2px solid #dee2e6 !important;
+}
+
+.table > tbody > tr > .free-day {
+    position: relative;
+    cursor: pointer;
+}
+
+.chess-table tbody > tr > .busy-cell {
+    position: relative;
+    padding-left: 0px !important; /*calculate .date-line horizontal*/
+    padding-top: 0px !important;
+    height: 30px;
+}
+
+.chess-table .busy-cell .date-line {
+    position: absolute;
+    width: 100%;
+    height: 50%; /*calc  vertical*/
+    /*top: 15%; !*calc 15*2 vertical*!*/
+    background-color: #6f6f6f;
+    border-radius: 6px;
+
+    z-index: 1;
+}
+
+.chess-table .busy-cell .date-line .line-status {
+    overflow: hidden;
+    position: relative;
+    background-color: #fffbe0;
+    margin-right: 5px; /*calculate .date-line horizontal*/
+    margin-left: 5px; /*calculate .date-line horizontal*/
+    top: 0px;
+    height: 100%;
+}
+
+.chess-table .busy-cell .date-line .line-status:hover {
+    background-color: #e0d78d;
+}
+
+.chess-table .busy-cell .date-line .line-status .text-line{
+    padding-left: 0px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: #5b5b5b;
+}
+
+.table > tbody > tr > .p-0 {
+    padding: 0px;
+}
+
+.chess-table  tbody > tr > td,
+.chess-table  thead > tr > th{
+    padding: 4px;
+}
+
+.chess-table  thead > tr > th{
+    text-align: center;
+}
+
+.chess-table tbody > tr .text-selected-cell{
+    padding:  4px 0px 0px 0px;
+    text-align: center;
+}
+
+.chess-table tbody > tr .unselected-cell:hover,
+.chess-table thead .th-day[data-light=true],
+.chess-table thead .th-day:hover{
+    background-color: #aabcca !important;
+}
+
+.chess-table thead .th-day:hover{
+    cursor: pointer;
+}
+
+.chess-table thead > tr > .th-day {
+    min-width: 1px;
+    text-align: center;
+}
+
+.chess-table thead > tr > .th-number {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.chess-table tbody > tr > .th-number{
+    min-width: 200px;
+    max-width: 200px;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+ }
+
+.chess-table tbody > .tr-number{
+    background-color: #fff;
+}
+.chess-table tbody > .select-row-hover ,
+.chess-table tbody > .select-row-hover .day-off{
+    background-color: #f0f6f9 !important;
+}
+.chess-table tbody > .select-row-hover .th-number > .text-float{
+    background-color: #aabcca !important;
+}
+
+
+/*Плавающий столбец и шапка*/
+.chess-table tbody .th-number > .text-float{
+    background-color: #fff;
+
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    left: 0px;
+
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-right: 4px;
+    z-index: 15;
+}
+
+.chess-table .th-number .float-button-addCategory{
+    padding-top: 8px;
+    padding-right: 4px;
+}
+
+.chess-table thead .th-number.text-float{
+    background-color: #fff !important;
+    left:0;
+    z-index: 20;
+}
+
+.chess-table .text-float{
+    position: absolute;
+}
+
+.chess-table .text-in-shadow {
+    color: rgba(0,0,0,0);
+    opacity: 0.0;
+}
+
+.chess-table-clone{
+    position: absolute;
+    z-index: 15;
+}
+
+.chess-table-clone thead > tr > th{
+    background-color: #fff !important;
+}
